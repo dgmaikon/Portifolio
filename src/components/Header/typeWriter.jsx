@@ -1,6 +1,5 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-import '../css/header.css';
 
 const MyComponent = () => {
 
