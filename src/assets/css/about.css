@@ -1,0 +1,16 @@
+#about {
+    height: 100vh;
+}
+
+.about-title {
+    color: var(--color-blue);
+    font-size: 40px;
+    padding-top: 2%;
+    text-transform: uppercase;
+}
+
+.about-text {
+    color: var(--color-light);
+    font-size: 25px;
+    padding: 0 15%;
+}

@@ -1,0 +1,23 @@
+.navbar {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    color: var(--color-light);
+    padding-left: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: var(--color-blue);
+}
+
+.nav:hover .nav-item:not(:hover) {
+    opacity: .2;
+}
