@@ -1,8 +1,16 @@
-.navbar {
-    padding: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#navbarId {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.nav-scrolled {
+    background-color: var(--glow-color);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
 .nav-item {
@@ -15,7 +23,8 @@
 }
 
 .nav-item:hover {
-    color: var(--color-blue);
+    color: var(--glow-color);
+    text-shadow: 1px 1px 10px hsl(186 100% 69%);
 }
 
 .nav:hover .nav-item:not(:hover) {
