@@ -1,4 +1,27 @@
 :root {
     --color-light: antiquewhite;
     --color-blue: aqua;
+    --glow-color: hsl(186 100% 69%);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #272727;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0 1%;
+}
+  
+  
