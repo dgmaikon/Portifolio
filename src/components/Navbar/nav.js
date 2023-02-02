@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-
+import React, { useEffect } from "react";
 
 const MyPage = () => {
   const handleScroll = () => {
@@ -13,5 +12,5 @@ useEffect(() => {
     window.removeEventListener("scroll", handleScroll);
   };
   }, []);
-};
+}; 
 export default MyPage;
