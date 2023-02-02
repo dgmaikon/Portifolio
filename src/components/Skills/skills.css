@@ -1,0 +1,9 @@
+#skills {
+    height: 100vh;
+}
+
+.skills-text {
+    color: var(--color-light);
+    font-size: 25px;
+    padding: 0 15%;
+}
