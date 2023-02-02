@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
-const MyComponent = () => {
+const Header = () => {
 
   const handleDone = () => {
     console.log(`Done after 2 loops!`)
@@ -14,7 +14,7 @@ const MyComponent = () => {
         <span style={{ color: 'aqua', fontWeight: 'bold' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={['eu sou', 'Front-End Developer', 'Entusiasta de tecnologia', 'Gamer']}
+            words={['eu sou', 'Gamer', 'Entusiasta de tecnologia', 'Front-End Developer']}
             loop={2}
             cursor
             cursorStyle='_'
@@ -29,4 +29,4 @@ const MyComponent = () => {
   )
 }
 
-export default MyComponent;
+export default Header;
