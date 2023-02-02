@@ -1,13 +1,11 @@
 #navbarId {
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
     padding: 1%;
 }
 
-.nav-scrolled {
+.nav-item .active {
     background-color: var(--glow-color);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -15,7 +13,7 @@
 
 .nav-item {
     color: var(--color-light);
-    padding-left: 2rem;
+    margin-left: 2rem;
     font-weight: bolder;
     cursor: pointer;
     text-transform: uppercase;
