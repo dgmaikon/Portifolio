@@ -1,0 +1,13 @@
+#works {
+    height: 100vh;
+}
+
+.work-title {
+    color: var(--glow-color);
+    text-shadow: 1px 1px 10px hsl(186 100% 69%);
+}
+
+#works-props{
+    
+    
+}
