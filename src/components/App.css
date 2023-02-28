@@ -24,6 +24,10 @@ body {
   padding: 0 2%;
 }
 
+a:visited {
+  color: var(--color-light);
+}
+
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 .glowing-btn {
