@@ -24,12 +24,7 @@ const Header = () => {
         <span style={{ color: "aqua", fontWeight: "bold" }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={[
-              "eu sou",
-              "Gamer",
-              "Entusiasta de tecnologia",
-              "Front-End Developer",
-            ]}
+            words={["eu sou", "Gamer", "Front-End Developer"]}
             loop={2}
             cursor
             cursorStyle="_"
@@ -44,7 +39,7 @@ const Header = () => {
         style={{ display: visible ? "inline" : "none" }}
         onClick={clickTop}
       >
-        TOP
+        Top
       </button>
     </div>
   );
