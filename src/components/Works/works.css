@@ -1,38 +1,43 @@
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 1rem 2rem;
-    justify-content: center;
-    align-content: center;
-    padding: 0 8%;
-    min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem 2rem;
+  justify-content: center;
+  align-content: center;
+  padding: 0 8%;
+  min-height: 100vh;
 }
 
 .works-items {
-    margin: 0 auto;
-    min-height: 250px;
-    padding: 5%; 
-    place-self: center;
-    color: antiquewhite;
-    background-color: #1e1e1e;
-    box-shadow: 2px 2px 3px black;
-    border: 2px solid #000;
+  margin: 0 auto;
+  min-height: 250px;
+  padding: 5%;
+  place-self: center;
+  color: antiquewhite;
+  background-color: #1e1e1e;
+  box-shadow: 2px 2px 3px black;
+  border: 2px solid #000;
 }
 
 .works-title {
-    color: var(--glow-color);
-    text-shadow: 1px 1px 10px hsl(186 100% 69%);
-    padding-bottom: 10%;
+  color: var(--glow-color);
+  text-shadow: 1px 1px 10px #61efff;
+  padding-bottom: 10%;
 }
 
 .works-content {
-    margin: 5% 0;
+  margin: 5% 0;
 }
 
 .external {
-    margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
-.external img:hover {
-    color: aqua;
+.external svg {
+  width: 25px;
+  height: 25px;
+}
+
+.fa-github:hover {
+  color: #61efff;
 }
