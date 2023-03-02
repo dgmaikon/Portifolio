@@ -9,6 +9,7 @@ import About from "./About/About.jsx";
 import Skills from "./Skills/Skills.jsx";
 import Works from "./Works/Works.jsx";
 import Title from "./Works/Title-Work.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 //JS
 import projects from "./Works/works.js";
@@ -36,6 +37,7 @@ function App() {
       <Skills />
       <Title />
       <div className="projects">{projects.map(createEntry)}</div>
+      <Footer />
     </>
   );
 }
