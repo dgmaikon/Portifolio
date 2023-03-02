@@ -1,7 +1,13 @@
 :root {
   --color-light: antiquewhite;
-  --color-blue: aqua;
-  --glow-color: hsl(186 100% 69%);
+  --color-glow: #61efff;
+  /* --bg: #1d1d1d;
+  --color-icon: #535c68;
+  --social-icon1: #e4405f;
+  --social-icon2: #3b5999;
+  --social-icon3: #e4405f;
+  --social-icon4: #cd201f;
+  --social-icon5: #0077b5; */
 }
 
 * {
@@ -21,22 +27,22 @@ body {
   background-color: #1d1d1d;
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
-  padding: 0 2%;
 }
 
-a:visited {
-  color: var(--color-light);
+.works-links a:visited,
+.works-links a:link {
+  color: #000;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 .glowing-btn {
   position: relative;
-  color: var(--glow-color);
+  color: var(--color-glow);
   cursor: pointer;
   padding: 0.35em 1em;
   margin: 5%;
-  border: 0.15em solid var(--glow-color);
+  border: 0.15em solid var(--color-glow);
   border-radius: 0.45em;
   background: none;
   perspective: 2em;
@@ -45,12 +51,12 @@ a:visited {
   font-weight: 900;
   letter-spacing: 0.5em;
 
-  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--color-glow),
+    0px 0px 0.5em 0px var(--color-glow);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--color-glow),
+    0px 0px 0.5em 0px var(--color-glow);
+  box-shadow: inset 0px 0px 0.5em 0px var(--color-glow),
+    0px 0px 0.5em 0px var(--color-glow);
   animation: border-flicker 2s linear infinite;
 }
 
@@ -58,10 +64,10 @@ a:visited {
   float: left;
   margin-right: -0.8em;
   -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
+    0 0 0.45em var(--color-glow);
   -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    0 0 0.45em var(--color-glow);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--color-glow);
   animation: text-flicker 3s linear infinite;
 }
 
@@ -80,7 +86,7 @@ a:visited {
   opacity: 0.7;
   filter: blur(1em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  background: var(--glow-color);
+  background: var(--color-glow);
   pointer-events: none;
 }
 
@@ -93,8 +99,8 @@ a:visited {
   bottom: 0;
   opacity: 0;
   z-index: -1;
-  background-color: var(--glow-color);
-  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  background-color: var(--color-glow);
+  box-shadow: 0 0 2em 0.2em var(--color-glow);
   transition: opacity 100ms linear;
 }
 
