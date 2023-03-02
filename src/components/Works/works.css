@@ -8,11 +8,14 @@
   min-height: 100vh;
 }
 
+.works-section {
+  position: relative;
+}
+
 .works-items {
   margin: 0 auto;
   min-height: 250px;
   padding: 5%;
-  place-self: center;
   color: antiquewhite;
   background-color: #1e1e1e;
   box-shadow: 2px 2px 3px black;
@@ -20,7 +23,7 @@
 }
 
 .works-title {
-  color: var(--glow-color);
+  color: var(--color-glow);
   text-shadow: 1px 1px 10px #61efff;
   padding-bottom: 10%;
 }
@@ -29,15 +32,23 @@
   margin: 5% 0;
 }
 
-.external {
+.icon-link {
   margin: 0 0.5rem;
 }
 
-.external svg {
-  width: 25px;
-  height: 25px;
+.icon-link svg {
+  width: 30px;
+  height: 30px;
 }
 
-.fa-github:hover {
-  color: #61efff;
+.works-links {
+  display: inline-flex;
+  float: right;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.works-links a:hover:visited {
+  color: var(--color-glow);
 }
