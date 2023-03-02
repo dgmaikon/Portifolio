@@ -20,7 +20,7 @@
 }
 
 .title-second {
-  color: var(--color-blue);
+  color: var(--color-glow);
   white-space: normal;
   letter-spacing: 0.2rem;
   line-height: 3.2rem;
@@ -32,13 +32,13 @@
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  border: 0.15em solid var(--glow-color);
+  border: 0.15em solid var(--color-glow);
   border-radius: 0.45em;
   outline: none;
   background-color: transparent;
-  color: var(--glow-color);
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
+  color: var(--color-glow);
+  box-shadow: inset 0px 0px 0.5em 0px var(--color-glow),
+    0px 0px 0.5em 0px var(--color-glow);
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
