@@ -1,35 +1,30 @@
 #footer {
   width: 100%;
-  background: #1d1d1d; /* fallback for old browsers */
+  background: rgb(29, 29, 29);
   background: -webkit-linear-gradient(
-    to top,
-    #004e92,
-    #1d1d1d
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    to bottom,
+    rgba(29, 29, 29, 1) 0%,
+    rgba(12, 37, 60, 1) 25%,
+    rgba(7, 56, 98, 1) 50%,
+    rgba(20, 86, 144, 1) 75%,
+    rgba(0, 78, 146, 1) 100%
+  );
   background: linear-gradient(
-    to top,
-    #004e92,
-    #1d1d1d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.footer-items {
-  display: inline-flex;
-  list-style: none;
-  margin: 2rem 0;
+    to bottom,
+    rgba(29, 29, 29, 1) 0%,
+    rgba(12, 37, 60, 1) 25%,
+    rgba(7, 56, 98, 1) 50%,
+    rgba(20, 86, 144, 1) 75%,
+    rgba(0, 78, 146, 1) 100%
+  );
 }
 
-.footer-items li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: var(--color-light);
-  padding: 0 1rem;
-}
-
-.footer-items li a:hover {
+.nav-items li a:hover {
   color: var(--color-glow);
+  text-shadow: 1px 1px 10px var(--color-glow);
 }
 
-.footer-items:hover .footer-link:not(:hover) {
+.nav-items:hover .nav-item:not(:hover) {
   opacity: 0.2;
 }
 
@@ -43,6 +38,7 @@
   z-index: -10;
   padding: 5rem;
 }
+
 .social-list {
   max-width: 50rem;
   padding: 0 1.5rem;
@@ -51,6 +47,7 @@
 
 .social-item {
   list-style: none;
+  margin: 0 0.5rem;
 }
 
 .social-link {
