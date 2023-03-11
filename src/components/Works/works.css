@@ -1,4 +1,4 @@
-.projects {
+#worksProjects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 1rem 2rem;
@@ -16,7 +16,7 @@
   margin: 0 auto;
   min-height: 250px;
   padding: 5%;
-  color: antiquewhite;
+  color: var(--color-light);
   background-color: #1e1e1e;
   box-shadow: 2px 2px 3px black;
   border: 2px solid #000;
