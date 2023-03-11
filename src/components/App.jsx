@@ -1,6 +1,7 @@
-import react, { useState } from "react";
+import react, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { Typewriter } from "react-simple-typewriter";
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 //Components JSX
 import Navbar from "./Navbar/Navbar.jsx";
@@ -12,7 +13,7 @@ import Title from "./Works/Title-Work.jsx";
 import Footer from "./Footer/Footer.jsx";
 
 //JS
-import projects from "./Works/works.js";
+import worksProjects from "./Works/works.js";
 
 //CSS
 import "./App.css";
@@ -24,6 +25,8 @@ function createEntry(workEntry) {
       id={workEntry.id}
       title={workEntry.title}
       content={workEntry.content}
+      link={workEntry.link}
+      linkWeb={workEntry.linkWeb}
     />
   );
 }
@@ -36,7 +39,7 @@ function App() {
       <About />
       <Skills />
       <Title />
-      <div className="projects">{projects.map(createEntry)}</div>
+      <div id="worksProjects">{worksProjects.map(createEntry)}</div>
       <Footer />
     </>
   );
