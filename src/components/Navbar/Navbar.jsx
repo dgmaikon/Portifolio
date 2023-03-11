@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./navbar.css";
+
+import { motion, useTransform } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="nav">
-        <a className="nav-item" href="#header">
-          Home
-        </a>
-        <a className="nav-item" href="#about">
-          About
-        </a>
-        <a className="nav-item" href="#skills">
-          Skills
-        </a>
-        <a className="nav-item" href="#projects">
-          Projects
-        </a>
-      </div>
+    <nav className="nav">
+      <ul className="nav-items">
+        <li className="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li className="nav-item">
+          <a href="#skills">Skills</a>
+        </li>
+        <li className="nav-item">
+          <a href="#worksProjects">Projects</a>
+        </li>
+      </ul>
     </nav>
   );
 };
