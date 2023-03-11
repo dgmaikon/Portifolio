@@ -1,8 +1,10 @@
 import React from "react";
-import projects from "./works.js";
+import workProjects from "./works.js";
 import "./works.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function Works(props) {
   return (
@@ -11,15 +13,11 @@ function Works(props) {
         <h2 className="works-title">{props.title}</h2>
         <p className="works-content">{props.content}</p>
         <div className="works-links">
-          <a
-            className="icon-link"
-            target="_blank"
-            href="https://github.com/dgmaikon?tab=repositories"
-          >
-            <FontAwesomeIcon icon="fa-brands fa-github" />
+          <a className="icon-link" target="_blank" href={props.link}>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a className="icon-link" target="_blank" href="">
-            <FontAwesomeIcon icon="fa-solid fa-link" />
+          <a className="icon-link" target="_blank" href={props.linkWeb}>
+            <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
       </div>
