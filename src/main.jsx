@@ -1,9 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from '../src/components/App'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+//Import CSS stylesheet
+import "./styles/elements/base.css";
+import "./styles/settings/colors.css";
+
+import App from "../src/components/App";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
