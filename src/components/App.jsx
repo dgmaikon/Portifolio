@@ -1,16 +1,14 @@
-import react, { useState, useEffect } from "react";
+import react from "react";
 import ReactDOM from "react-dom/client";
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 //Components JSX
-import Navbar from "./Navbar/Navbar.jsx";
-import Header from "./Header/Header.jsx";
-import About from "./About/About.jsx";
-import Skills from "./Skills/Skills.jsx";
-import Works from "./Works/Works.jsx";
+import Navbar from "./Navbar/";
+import Header from "./Header/";
+import About from "./About/";
+import Skills from "./Skills/";
+import Works from "./Works/";
 import Title from "./Works/Title-Work.jsx";
-import Footer from "./Footer/Footer.jsx";
+import Footer from "./Footer/";
 
 //JS
 import worksProjects from "./Works/works.js";
