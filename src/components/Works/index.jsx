@@ -1,6 +1,6 @@
 import React from "react";
 import workProjects from "./works.js";
-import "./works.css";
+import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";

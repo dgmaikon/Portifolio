@@ -1,6 +1,6 @@
 import React from "react";
-import "./footer.css";
-import "../Navbar/navbar.css";
+import "./styles.css";
+import "../Navbar/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
@@ -9,8 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-  const date = new Date();
-  const year = date.getFullYear();
+  const year = new Date().getFullYear();
 
   return (
     <section id="footer">
@@ -47,10 +46,10 @@ function Footer() {
           <a href="#about">About</a>
         </li>
         <li className="nav-item">
-          <a href="">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li className="nav-item">
-          <a href="">Projects</a>
+          <a href="#worksProjects">Projects</a>
         </li>
       </ul>
 

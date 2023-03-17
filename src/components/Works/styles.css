@@ -25,11 +25,23 @@
 .works-title {
   color: var(--color-glow);
   text-shadow: 1px 1px 10px #61efff;
-  padding-bottom: 10%;
+  margin-bottom: 15%;
+}
+
+.works-items:hover {
+  box-shadow: 2px 2px 3px var(--color-glow);
 }
 
 .works-content {
   margin: 5% 0;
+}
+
+.works-links {
+  display: inline-flex;
+  float: right;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .icon-link {
@@ -41,14 +53,12 @@
   height: 30px;
 }
 
-.works-links {
-  display: inline-flex;
-  float: right;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+.works-links a:visited,
+.works-links a:link {
+  color: #000;
 }
 
-.works-links a:hover:visited {
+.works-links a:hover {
   color: var(--color-glow);
+  filter: drop-shadow(1px 1px 10px var(--color-glow));
 }

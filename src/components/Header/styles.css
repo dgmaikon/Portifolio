@@ -19,6 +19,11 @@
   font-size: 40px;
 }
 
+.main-title span {
+  color: var(--color-glow);
+  font-weight: bold;
+}
+
 .title-second {
   color: var(--color-glow);
   white-space: normal;

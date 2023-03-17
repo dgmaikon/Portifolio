@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./header.css";
+import "./styles.css";
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
     <div id="header">
       <h1 className="main-title">
         Maikon Natã{" "}
-        <span style={{ color: "aqua", fontWeight: "bold" }}>
+        <span>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={["eu sou", "Gamer", "Front-End Developer"]}
