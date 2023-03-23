@@ -1,61 +1,17 @@
 import React from "react";
 import "./styles.css";
-import "../Navbar/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDiscord,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <section id="footer">
-      <div className="footer-socials">
-        <ul className="social-list">
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <FontAwesomeIcon icon={faDiscord} />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <i className="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <ul className="nav-items">
-        <li className="nav-item">
-          <a href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a href="#about">About</a>
-        </li>
-        <li className="nav-item">
-          <a href="#skills">Skills</a>
-        </li>
-        <li className="nav-item">
-          <a href="#worksProjects">Projects</a>
-        </li>
-      </ul>
-
       <p className="copyright">
         Copyright © <span>{year}</span>
       </p>
+      <h3 className="footer-text">
+        Developed by: <a href="https://github.com/dgmaikon">@dgmaikon</a>
+      </h3>
     </section>
   );
 }
