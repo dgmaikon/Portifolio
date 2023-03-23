@@ -1,6 +1,12 @@
 :root {
+  --color-zero: #000;
   --color-light: white;
-
+  --color-primary: #09090b;
   --color-glow: #61efff;
   --color-glow-dark: #004e92;
+}
+
+::selection {
+  color: #fff;
+  background-color: #61efff;
 }
