@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #1d1d1d;
+  background-color: var(--color-zero);
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
 }
