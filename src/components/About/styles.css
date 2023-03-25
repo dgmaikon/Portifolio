@@ -1,16 +1,16 @@
 #about {
   position: relative;
   height: auto;
-  padding: 3rem;
+  padding: 0 3rem 5rem 3rem;
 }
 
 .about-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0 auto;
-  padding: 24px;
+  padding: 3rem 0;
   background-color: var(--color-primary);
   border: 2px solid #1d1d1d;
   border-radius: 6px;
@@ -20,14 +20,10 @@
   width: 50%;
   height: 25em;
   background-image: url("../../assets/images/img-profile.jpg");
-  border-radius: 8px;
+  border-radius: 10px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.about-content {
-  width: 49%;
 }
 
 .about-text {
@@ -44,7 +40,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
 }
 
 .cards-list {
@@ -66,7 +61,7 @@
   align-items: center;
   font-size: 2rem;
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-glow);
   width: 3.5rem;
   height: 3.5rem;
   transition: 0.5s linear;
@@ -103,19 +98,15 @@
   transform: scale(1);
 }
 
-/* .social-item:nth-child(1) a:hover:before {
-  background: var(--social-social1);
-}
-.social-item:nth-child(2) a:hover:before {
-  background: var(--social-social2);
-}
-.social-item:nth-child(3) a:hover:before {
-  background: var(--social-social3);
-}
+@media only screen and (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    padding-top: 0;
+    margin-top: 2rem;
+  }
 
-.social-item:nth-child(4) a:hover:before {
-  background: var(--social-social4);
+  .about-text {
+    min-width: 60vw;
+    text-align: center;
+  }
 }
-.social-item:nth-child(5) a:hover:before {
-  background: var(--social-social5);
-} */

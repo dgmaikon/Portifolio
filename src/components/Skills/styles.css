@@ -7,3 +7,16 @@
   color: var(--color-light);
   font-size: 25px;
 }
+
+@media only screen and (max-width: 390px) {
+  #skills .cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  #skills .cards-wrapper {
+    margin-top: 8rem;
+  }
+}

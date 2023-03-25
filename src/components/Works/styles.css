@@ -20,8 +20,8 @@
 }
 
 .works-title {
-  color: var(--color-glow);
-  text-shadow: 1px 1px 10px #61efff;
+  color: var(--color-light);
+  text-shadow: 1px 1px 1px var(--color-zero);
   margin-bottom: 15%;
 }
 
@@ -40,6 +40,7 @@
 
 .icon-link {
   margin: 0 0.5rem;
+  transition: 0.4s ease-in-out 0.1s;
 }
 
 .icon-link svg {
@@ -49,12 +50,13 @@
 
 .works-links a:visited,
 .works-links a:link {
-  color: #000;
+  color: var(--color-zero);
 }
 
 .works-links a:hover {
   color: var(--color-glow);
-  filter: drop-shadow(1px 1px 10px var(--color-glow));
+  filter: drop-shadow(1px 1px 5px var(--color-glow));
+  transition: 0.4s ease-out 0.1s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -68,7 +70,4 @@
   #worksProjects {
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
   }
-}
-
-@media screen {
 }
