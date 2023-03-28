@@ -16,7 +16,7 @@ import {
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <article id="skills">
       <button className="glowing-btn">
         <span className="glowing-txt">
           S<span className="faulty-letter">K</span>ILLS
@@ -72,7 +72,7 @@ const Skills = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </article>
   );
 };
 

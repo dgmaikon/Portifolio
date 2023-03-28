@@ -7,7 +7,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function Works(props) {
   return (
-    <section className="works-section">
+    <article className="works-section">
       <div className="works-items">
         <h2 className="works-title">{props.title}</h2>
         <p className="works-content">{props.content}</p>
@@ -20,7 +20,7 @@ function Works(props) {
           </a>
         </div>
       </div>
-    </section>
+    </article>
   );
 }
 
