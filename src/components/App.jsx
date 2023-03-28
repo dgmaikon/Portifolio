@@ -29,16 +29,18 @@ function createEntry(workEntry) {
   );
 }
 
-const App = () => (
-  <>
-    <Navbar />
-    <Header />
-    <About />
-    <Skills />
-    <Title />
-    <div id="worksProjects">{worksProjects.map(createEntry)}</div>
-    <Footer />
-  </>
-);
+const App = () => {
+  return (
+    <>
+      <Navbar />
+      <Header />
+      <About />
+      <Skills />
+      <Title />
+      <div id="worksProjects">{worksProjects.map(createEntry)}</div>
+      <Footer />
+    </>
+  );
+};
 
 export default App;
