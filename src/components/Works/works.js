@@ -41,7 +41,7 @@ const worksProjects = [
     title: "Keeper App",
     content: "This project is a way to keep your notes up to date",
     link: "https://github.com/dgmaikon/KeeperApp_React-Vite",
-    linkWeb: "",
+    linkWeb: "https://keppervite.vercel.app/",
   },
 ];
 
