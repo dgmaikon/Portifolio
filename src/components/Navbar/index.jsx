@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="{scrollPosition > 0 ? navbar-scrolled : navbar}">
       <ul className="nav-items">
         <li className="nav-item">
-          <a href="#">Home</a>
+          <a href="#header">Home</a>
         </li>
         <li className="nav-item">
           <a href="#about">About</a>
