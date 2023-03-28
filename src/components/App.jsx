@@ -9,6 +9,7 @@ import Skills from "./Skills/";
 import Works from "./Works/";
 import Title from "./Works/Title-Work.jsx";
 import Footer from "./Footer/";
+import Button from "./Button/";
 
 //JS
 import worksProjects from "./Works/works.js";
@@ -38,6 +39,7 @@ const App = () => {
       <Skills />
       <Title />
       <div id="worksProjects">{worksProjects.map(createEntry)}</div>
+      <Button />
       <Footer />
     </>
   );
