@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Header = () => {
   return (
-    <header id="header">
+    <article id="header">
       <h1 className="main-title">
         Maikon Natã{" "}
         <span>
@@ -20,7 +20,7 @@ const Header = () => {
           />
         </span>
       </h1>
-    </header>
+    </article>
   );
 };
 
