@@ -18,7 +18,7 @@ const Header = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <header id="header">
+    <header className="header">
       <h1 className="main-title">
         Maikon Natã{" "}
         <span>
