@@ -1,5 +1,4 @@
 import React from "react";
-import workProjects from "./works.js";
 import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
