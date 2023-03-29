@@ -1,7 +1,7 @@
 .navbar-scrolled {
   position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
+  /* left: 50%;
+  transform: translate(-50%, 0); */
   z-index: 10;
   width: 100vw;
   padding: 1rem 0;
@@ -38,6 +38,6 @@
 
 @media only screen and (max-width: 390px) {
   .nav-items li a {
-    padding: 0.4rem;
+    /* padding: 0.4rem; */
   }
 }
