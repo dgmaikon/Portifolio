@@ -1,10 +1,8 @@
 .navbar-scrolled {
   position: fixed;
-  /* left: 50%;
-  transform: translate(-50%, 0); */
   z-index: 10;
   width: 100vw;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   backdrop-filter: blur(5px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -16,8 +14,8 @@
 
 .nav-items li a {
   color: var(--color-light);
-  padding: 0 0.8rem;
-  font-size: 18px;
+  padding: 1rem;
+  font-size: var(--size-small);
   letter-spacing: 0.1rem;
   font-weight: bold;
   text-decoration: none;
@@ -38,6 +36,6 @@
 
 @media only screen and (max-width: 390px) {
   .nav-items li a {
-    /* padding: 0.4rem; */
+    padding: 0.4rem;
   }
 }

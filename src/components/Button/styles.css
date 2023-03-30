@@ -12,5 +12,5 @@
     0px 0px 0.5em 0px var(--color-glow);
   cursor: pointer;
   padding: 10px;
-  font-size: 18px;
+  font-size: var(--size-small);
 }

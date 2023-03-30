@@ -8,7 +8,7 @@
   border-radius: 0.45em;
   background: none;
   perspective: 2em;
-  font-size: 2em;
+  font-size: var(--size-big);
   font-weight: 900;
   letter-spacing: 0.5em;
 
@@ -190,7 +190,14 @@
 
 @media only screen and (max-width: 600px) {
   .glowing-btn {
-    font-size: 2em;
+    font-size: var(--size-big);
+    margin: 10%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .glowing-btn {
+    font-size: var(--size-big);
     margin: 10%;
   }
 }

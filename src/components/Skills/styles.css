@@ -5,7 +5,7 @@
 
 .skills-text {
   color: var(--color-light);
-  font-size: 25px;
+  font-size: var(--size-medium);
 }
 
 @media only screen and (max-width: 768px) {
@@ -14,9 +14,28 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.5rem;
   }
+
   #skills .cards-wrapper {
     margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #skills .card-link:before {
+    width: 4rem;
+    height: 3rem;
+  }
+
+  #skills .card-link {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--size-big);
+    width: 4rem;
+    height: 3rem;
+  }
+  #skills .cards-list {
+    gap: 1.5rem 2rem;
   }
 }

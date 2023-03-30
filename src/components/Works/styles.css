@@ -50,7 +50,7 @@
 
 .works-links a:visited,
 .works-links a:link {
-  color: var(--color-zero);
+  color: var(--color-light);
 }
 
 .works-links a:hover {

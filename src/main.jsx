@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 //Import CSS stylesheet
 import "./styles/elements/base.css";
 import "./styles/settings/colors.css";
+import "./styles/settings/sizing.css";
 
 import App from "../src/components/App";
 
