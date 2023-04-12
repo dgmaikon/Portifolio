@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,14 +16,45 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 
+const fadeVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
+const TitleVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const Skills = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <article id="skills">
-      <button className="glowing-btn">
+    <motion.article
+      id="skills"
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={fadeVariants}
+    >
+      <motion.button
+        className="glowing-btn"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={TitleVariants}
+      >
         <span className="glowing-txt">
           S<span className="faulty-letter">K</span>ILLS
         </span>
-      </button>
+      </motion.button>
 
       <div className="cards-wrapper">
         <ul className="cards-list">
@@ -72,7 +105,7 @@ const Skills = () => {
           </li>
         </ul>
       </div>
-    </article>
+    </motion.article>
   );
 };
 

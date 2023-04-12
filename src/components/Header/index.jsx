@@ -1,26 +1,48 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
 import "./styles.css";
 
+const fadeVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, y: 50 },
+};
+
 const Header = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <article id="header">
+    <motion.article
+      id="header"
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={fadeVariants}
+    >
       <h1 className="main-title">
         Maikon Natã{" "}
         <span>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={["eu sou", "Gamer", "Front-End Developer"]}
-            loop={2}
+            words={["eu sou", "Gamer", "e sou", "Front-End Developer"]}
+            loop={1}
             cursor
             cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
+            typeSpeed={50}
+            deleteSpeed={60}
             delaySpeed={1000}
           />
         </span>
       </h1>
-    </article>
+    </motion.article>
   );
 };
 
