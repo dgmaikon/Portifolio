@@ -1,27 +1,55 @@
-import React from "react";
-import "./styles.css";
+import React, { useEffect, useState } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-function Works(props) {
-  return (
-    <article className="works-section">
-      <div className="works-items">
-        <h2 className="works-title">{props.title}</h2>
-        <p className="works-content">{props.content}</p>
-        <div className="works-links">
-          <a className="icon-link" target="_blank" href={props.link}>
+import { projectsData } from "../Works/works";
+
+import "./styles.css";
+
+const fadeVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  hidden: { opacity: 0, y: 50 },
+};
+
+export default function Card() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  const worksData = projectsData.map((item) => {
+    return (
+      <div className="project-items" key={item.id}>
+        <h2 className="project-title-content">{item.title}</h2>
+        <p className="project-content">{item.content}</p>
+        <div className="project-links">
+          <a className="icon-link" target="_blank" href={item.link}>
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a className="icon-link" target="_blank" href={props.linkWeb}>
+          <a className="icon-link" target="_blank" href={item.linkWeb}>
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
       </div>
-    </article>
+    );
+  });
+  return (
+    <motion.article
+      className="project-section"
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={fadeVariants}
+    >
+      {worksData}
+    </motion.article>
   );
 }
-
-export default Works;
