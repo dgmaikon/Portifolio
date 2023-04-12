@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,14 +11,46 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+const fadeVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
+const TitleVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const About = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <article id="about">
-      <button className="glowing-btn">
+    <motion.article
+      id="about"
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={fadeVariants}
+    >
+      <motion.button
+        className="glowing-btn"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={TitleVariants}
+      >
         <span className="glowing-txt">
           A<span className="faulty-letter">B</span>OUT
         </span>
-      </button>
+      </motion.button>
+
       <div className="about-wrapper">
         <article className="about-profile"></article>
         <div className="about-content">
@@ -26,11 +60,18 @@ const About = () => {
             amigáveis e intuitivas para os usuários.
           </p>
           <div className="cards-wrapper">
-            <ul className="cards-list">
+            <motion.ul
+              className="cards-list"
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={fadeVariants}
+            >
               <li className="card-item">
                 <a
                   className="card-link"
                   href="https://www.instagram.com/dgmaikon/"
+                  target="_blank"
                 >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
@@ -38,7 +79,8 @@ const About = () => {
               <li className="card-item">
                 <a
                   className="card-link"
-                  href="https://www.instagram.com/dgmaikon/"
+                  href="https://discordapp.com/channels/@me/195164414176002058"
+                  target="_blank"
                 >
                   <FontAwesomeIcon icon={faDiscord} />
                 </a>
@@ -46,24 +88,17 @@ const About = () => {
               <li className="card-item">
                 <a
                   className="card-link"
-                  href="https://www.instagram.com/dgmaikon/"
+                  href="https://www.linkedin.com/in/dgmaikondev/"
+                  target="_blank"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
-              <li className="card-item">
-                <a
-                  className="card-link"
-                  href="https://www.instagram.com/dgmaikon/"
-                >
-                  <FontAwesomeIcon icon={faYoutube} />
-                </a>
-              </li>
-            </ul>
+            </motion.ul>
           </div>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
