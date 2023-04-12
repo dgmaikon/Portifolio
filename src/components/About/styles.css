@@ -28,7 +28,7 @@
 .about-text {
   max-width: 35vw;
   color: var(--color-light);
-  font-size: var(--size-small);
+  font-size: var(--size-medium);
   margin: 4rem 3rem;
   text-align: start;
 }
@@ -95,32 +95,4 @@
 
 .card-link:hover::before {
   transform: scale(1);
-}
-
-@media only screen and (max-width: 768px) {
-  .about-wrapper {
-    flex-direction: column;
-    padding-top: 2rem;
-    margin-top: 2rem;
-  }
-
-  .about-text {
-    min-width: 60vw;
-    text-align: flex-start;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .about-profile {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  #about {
-    padding: 0 1.5rem 5rem 1.5rem;
-  }
-  .about-profile {
-    width: 70%;
-  }
 }

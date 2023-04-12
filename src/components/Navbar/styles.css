@@ -33,9 +33,3 @@
   opacity: 0.2;
   transition: 0.4s ease-out 0.1s;
 }
-
-@media only screen and (max-width: 390px) {
-  .nav-items li a {
-    padding: 0.4rem;
-  }
-}

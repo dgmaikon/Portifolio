@@ -7,7 +7,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0 auto;
   color: var(--color-light);
   font-weight: 700;
   font-size: 2.5rem;
@@ -17,9 +16,3 @@
   color: var(--color-glow);
   font-weight: bold;
 }
-
-@media only screen and (max-width: 390px) {
-  .main-title {
-    font-size: var(--size-big);
-  }
-} ;

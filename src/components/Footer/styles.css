@@ -37,9 +37,3 @@ a:link {
   color: var(--color-glow);
   text-decoration: none;
 }
-
-@media only screen and (max-width: 390px) {
-  #footer {
-    padding: 5rem 4.2rem;
-  }
-}
