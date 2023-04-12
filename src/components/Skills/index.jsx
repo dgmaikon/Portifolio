@@ -59,47 +59,47 @@ const Skills = () => {
       <div className="cards-wrapper">
         <ul className="cards-list">
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faHtml5} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faCss3Alt} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faJs} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faReact} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faNodeJs} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faGitAlt} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faGithub} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faSass} />
             </i>
           </li>
           <li className="card-item">
-            <i className="card-link" href="https://www.instagram.com/dgmaikon/">
+            <i className="card-link">
               <FontAwesomeIcon icon={faBootstrap} />
             </i>
           </li>
