@@ -13,4 +13,15 @@
   cursor: pointer;
   padding: 10px;
   font-size: var(--size-small);
+  transition: opacity 0.5s ease-out 2s;
+  animation: visibleBtn 1.5s linear;
+}
+
+@keyframes visibleBtn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
