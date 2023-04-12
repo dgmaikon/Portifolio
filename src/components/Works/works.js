@@ -1,4 +1,4 @@
-const worksProjects = [
+export const projectsData = [
   {
     id: 1,
     title: "Blog Ejs",
@@ -11,7 +11,7 @@ const worksProjects = [
     title: "Simon Game",
     content: "This projects is build with HTML",
     link: "https://github.com/dgmaikon/simon-game",
-    linkWeb: "",
+    linkWeb: "https://memorie-game.vercel.app/",
   },
   {
     id: 3,
@@ -19,7 +19,7 @@ const worksProjects = [
     content:
       "This Website is about Tinderfor dogs, if you love your dog i recommend use that!",
     link: "https://github.com/dgmaikon/TinDog",
-    linkWeb: "",
+    linkWeb: "https://tin-dog2.vercel.app/",
   },
   {
     id: 4,
@@ -27,7 +27,7 @@ const worksProjects = [
     content:
       "This project is for music lovers and people who like a little sound ",
     link: "https://github.com/dgmaikon/drum-kit",
-    linkWeb: "",
+    linkWeb: "https://drumkit2.vercel.app/",
   },
   {
     id: 5,
@@ -44,5 +44,3 @@ const worksProjects = [
     linkWeb: "https://keppervite.vercel.app/",
   },
 ];
-
-export default worksProjects;
