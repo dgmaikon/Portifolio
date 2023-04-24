@@ -1,9 +1,9 @@
-import react from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 //Components JSX
-import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Title from "./components/Title";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Products from "./components/Products";
@@ -16,8 +16,8 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <Navbar />
       <Header />
+      <Title />
       <About />
       <Skills />
       <Products />
