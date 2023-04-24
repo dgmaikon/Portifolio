@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-import { projectsData } from "../Works/works";
+import projectsData from "../../data/works.json";
 
 import "./styles.css";
 
@@ -15,7 +15,7 @@ const fadeVariants = {
   hidden: { opacity: 0, y: 50 },
 };
 
-export default function Card() {
+const Projects = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -43,7 +43,7 @@ export default function Card() {
   });
   return (
     <motion.article
-      className="project-section"
+      id="project-section"
       ref={ref}
       animate={controls}
       initial="hidden"
@@ -52,4 +52,6 @@ export default function Card() {
       {worksData}
     </motion.article>
   );
-}
+};
+
+export default Projects;
