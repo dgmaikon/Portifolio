@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "../Works";
-import Title from "../Works/Title-Work";
+import TitleWorks from "../Works/Title-Work";
+import Projects from "../Works";
 
 const Products = () => {
   return (
-    <>
-      <Title />
-      <Card />
-    </>
+    <article className="products">
+      <TitleWorks />
+      <Projects />
+    </article>
   );
 };
 
