@@ -1,8 +1,8 @@
-.project-section {
+#project-section {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
   justify-content: center;
   align-content: center;
   padding: 2% 8%;
@@ -10,8 +10,6 @@
 
 .project-items {
   position: relative;
-  /* margin: 0 auto; */
-  /* width: 350px; */
   min-height: 250px;
   padding: 5%;
   background-color: var(--color-primary);
@@ -56,17 +54,4 @@
   color: var(--color-glow);
   filter: drop-shadow(1px 1px 5px var(--color-glow));
   transition: 0.4s ease-out 0.1s;
-}
-
-@media only screen and (max-width: 600px) {
-  #worksProjects {
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    margin: 2rem 0;
-  }
-}
-
-@media only screen and (min-width: 1441px) {
-  #worksProjects {
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-  }
 }
