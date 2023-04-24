@@ -7,7 +7,7 @@ const TitleVariants = {
   hidden: { opacity: 0, y: 100 },
 };
 
-const Title = () => {
+const TitleWorks = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -32,4 +32,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default TitleWorks;
