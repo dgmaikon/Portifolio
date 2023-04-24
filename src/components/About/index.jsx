@@ -8,7 +8,6 @@ import {
   faInstagram,
   faDiscord,
   faLinkedinIn,
-  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 const fadeVariants = {
