@@ -13,7 +13,7 @@ O site é composto por 4 seções:
 - **Home:** Nele temos uma breve apresentação;
 - **About:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
 - **Skills:** Linguagens que eu tenho um certo conhecimento;
-- **Works:** Apresento alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
+- **Works:** Apresento alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub e os propios sites, nessa seção foi usada a função map para renderizar os cards da seção;
 
 ---
 
@@ -25,3 +25,4 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - CSS;
 - JavaScript;
 - React;
+- Framer Motion;
