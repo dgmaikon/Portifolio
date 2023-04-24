@@ -1,7 +1,17 @@
 /* MOBILE */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-scrolled {
+    padding: 0.5rem 2rem;
+    align-items: center;
+  }
   .nav-items li a {
-    padding: 0.4rem;
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger-item {
+    display: flex;
   }
   #header .main-title {
     font-size: var(--size-big);
@@ -29,6 +39,10 @@
     margin-top: 2rem;
   }
 
+  #skills {
+    height: 60vh;
+  }
+
   #skills .cards-list {
     gap: 1.5rem;
   }
@@ -44,6 +58,20 @@
 
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-scrolled {
+    padding: 0.5rem 2rem;
+    align-items: center;
+  }
+  .nav-items li a {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger-item {
+    display: flex;
+  }
+
   .glowing-btn {
     font-size: var(--size-big);
     margin: 10%;
@@ -67,6 +95,10 @@
   #skills .cards-wrapper {
     margin-top: 8rem;
   }
+  .project-section {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    margin: 2rem 0;
+  }
 }
 
 /* Laptop */
@@ -86,6 +118,10 @@
   }
 
   #skills .cards-wrapper {
-    margin-top: 8rem;
+    margin-top: 3rem;
+  }
+  .project-section {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    margin: 2rem 0;
   }
 }
