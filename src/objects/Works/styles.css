@@ -1,0 +1,53 @@
+#project-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+}
+
+.project-items {
+  position: relative;
+  min-height: 250px;
+  padding: 5%;
+  background-color: var(--color-primary);
+  border-top: 1px solid var(--color-glow);
+}
+
+.project-title-content {
+  color: var(--color-light);
+  text-shadow: 1px 1px 1px var(--color-zero);
+  margin-bottom: 15%;
+}
+
+.project-content {
+  margin: 5% 0;
+  color: var(--color-light);
+}
+
+.project-links {
+  display: inline-flex;
+  float: right;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.icon-link {
+  margin: 0 0.5rem;
+  transition: 0.4s ease-in-out 0.1s;
+}
+
+.icon-link svg {
+  width: 30px;
+  height: 30px;
+}
+
+.project-links a:visited,
+.project-links a:link {
+  color: var(--color-light);
+}
+
+.project-links a:hover {
+  color: var(--color-glow);
+  filter: drop-shadow(1px 1px 5px var(--color-glow));
+  transition: 0.4s ease-out 0.1s;
+}
