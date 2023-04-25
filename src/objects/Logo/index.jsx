@@ -1,5 +1,5 @@
 import React from "react";
-import dgLogo from "../../img/logo-icon-dark.png";
+import dgLogo from "../../assets/icons/logo-dark.png";
 import "./styles.css";
 
 const Logo = () => {
