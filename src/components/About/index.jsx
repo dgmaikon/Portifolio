@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { fadeVariants } from "../../Variables";
+
 import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,11 +11,6 @@ import {
   faDiscord,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-
-const fadeVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  hidden: { opacity: 0, y: 100 },
-};
 
 const TitleVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
@@ -38,13 +35,7 @@ const About = () => {
       initial="hidden"
       variants={fadeVariants}
     >
-      <motion.button
-        className="glowing-btn"
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={TitleVariants}
-      >
+      <motion.button className="glowing-btn" variants={TitleVariants}>
         <span className="glowing-txt">
           A<span className="faulty-letter">B</span>OUT
         </span>
@@ -59,13 +50,7 @@ const About = () => {
             amigáveis e intuitivas para os usuários.
           </p>
           <div className="cards-wrapper">
-            <motion.ul
-              className="cards-list"
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={fadeVariants}
-            >
+            <ul className="cards-list">
               <li className="card-item">
                 <a
                   className="card-link"
@@ -93,7 +78,7 @@ const About = () => {
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
-            </motion.ul>
+            </ul>
           </div>
         </div>
       </div>
