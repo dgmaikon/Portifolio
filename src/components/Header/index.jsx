@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { fadeVariants } from "../../Variables";
+
 import Logo from "../../objects/Logo";
 import Navigation from "../../objects/Navigation";
+import MenuHamburger from "../../objects/Hamburger";
 
 import "./styles.css";
-import MenuHamburger from "../Hamburger";
-
-const fadeVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
-  hidden: { opacity: 0, y: -30 },
-};
 
 const Header = () => {
   const [scrollPosition, setscrollPosition] = useState(0);

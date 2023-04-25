@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { fadeVariants } from "../../Variables";
+
 import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,11 +17,6 @@ import {
   faSass,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
-
-const fadeVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  hidden: { opacity: 0, y: 100 },
-};
 
 const TitleVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },

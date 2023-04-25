@@ -2,12 +2,9 @@ import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
-import "./styles.css";
+import { fadeVariants } from "../../Variables";
 
-const fadeVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, y: 50 },
-};
+import "./styles.css";
 
 const Title = () => {
   const controls = useAnimation();
