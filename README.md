@@ -2,7 +2,7 @@
   💻<br>Portfólio - Maikon Natã
 </h1>
 
-![Resultado final do projeto](src/assets/images/preview.png)
+![Resultado final do projeto](src/assets/images/project-preview.png)
 
 <h4 align="center"><a href="https://www.dgmaikon.github.io/">Clique para visitar o projeto</a></h4>
 
