@@ -13,7 +13,7 @@
   .hamburger-item {
     display: flex;
   }
-  #header .main-title {
+  #main .main-title {
     font-size: var(--size-big);
   }
   .glowing-btn {
@@ -50,7 +50,9 @@
   #skills .cards-wrapper {
     margin-top: 8rem;
   }
-
+  .products {
+    padding: 1rem;
+  }
   #footer {
     padding: 5rem 0;
   }
@@ -70,6 +72,10 @@
   }
   .hamburger-item {
     display: flex;
+  }
+
+  #main .main-title {
+    font-size: var(--size-big);
   }
 
   .glowing-btn {
@@ -95,7 +101,10 @@
   #skills .cards-wrapper {
     margin-top: 8rem;
   }
-  .project-section {
+  .products {
+    padding: 1rem;
+  }
+  #project-section {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     margin: 2rem 0;
   }
@@ -120,7 +129,7 @@
   #skills .cards-wrapper {
     margin-top: 3rem;
   }
-  .project-section {
+  #project-section {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     margin: 2rem 0;
   }
