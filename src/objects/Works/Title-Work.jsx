@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-const TitleVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-  hidden: { opacity: 0, y: 100 },
-};
+import { TitleVariants } from "../../Variables";
 
 const TitleWorks = () => {
   const controls = useAnimation();
