@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { fadeVariants } from "../../Variables";
+import { fadeVariants, TitleVariants } from "../../Variables";
 
 import "./styles.css";
 
@@ -11,11 +11,6 @@ import {
   faDiscord,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-
-const TitleVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-  hidden: { opacity: 0, y: 100 },
-};
 
 const About = () => {
   const controls = useAnimation();
