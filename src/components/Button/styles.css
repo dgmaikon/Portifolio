@@ -1,7 +1,7 @@
 .myBtn {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 1.5rem;
+  right: 1.5rem;
   z-index: 99;
   border: 0.15em solid var(--color-glow);
   border-radius: 0.45em;
