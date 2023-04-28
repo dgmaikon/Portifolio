@@ -5,7 +5,7 @@ import "./styles.css";
 const Logo = () => {
   return (
     <>
-      <a href="#main">
+      <a href="https://github.com/dgmaikon" target="_blank">
         <img className="logo-icon" src={dgLogo} alt="Logo-icon" />
       </a>
     </>
