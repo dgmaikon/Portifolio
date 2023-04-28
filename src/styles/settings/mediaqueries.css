@@ -1,18 +1,19 @@
 /* MOBILE */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .navbar-scrolled {
-    padding: 0.5rem 2rem;
-    align-items: center;
+  .header {
+    display: none !important;
   }
   .nav-items li a {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
   .hamburger-item {
     display: flex;
   }
+
   #main .main-title {
     font-size: var(--size-big);
   }
@@ -28,7 +29,7 @@
     flex-direction: column;
   }
   #about .about-profile {
-    width: 60%;
+    width: 50%;
   }
   #about .about-text {
     max-width: 100%;
@@ -53,8 +54,18 @@
   .products {
     padding: 1rem;
   }
+  #project-section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2rem 0;
+  }
+  .project-items {
+    min-height: 200px;
+  }
   #footer {
-    padding: 5rem 0;
+    padding: 7rem 0;
+  }
+  .myBtn {
+    display: none !important;
   }
 }
 
@@ -105,7 +116,7 @@
     padding: 1rem;
   }
   #project-section {
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 2rem 0;
   }
 }
