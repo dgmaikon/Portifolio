@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Blog Ejs",
+    "title": "Autentication and Security",
     "content": "This projects is build with HTML, CSS and EJS",
-    "link": "https://github.com/dgmaikon/Blog-EJS",
+    "link": "https://github.com/dgmaikon/Autentication-and-Security",
     "linkWeb": ""
   },
   {
@@ -16,7 +16,7 @@
   {
     "id": 3,
     "title": "Tin Dog",
-    "content": "This Website is about Tinderfor dogs, if you love your dog i recommend use that!",
+    "content": "This Website is about Tinder for dogs, if you love your dog recommend use that!",
     "link": "https://github.com/dgmaikon/TinDog",
     "linkWeb": "https://tin-dog2.vercel.app/"
   },
