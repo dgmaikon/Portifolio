@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
+import NavigationFooter from "./components/NavigationFooter";
 
 //CSS
 import "./App.css";
@@ -23,6 +24,7 @@ const App = () => {
       <Products />
       <Button />
       <Footer />
+      <NavigationFooter />
     </>
   );
 };
