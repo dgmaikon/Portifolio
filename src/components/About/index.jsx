@@ -1,16 +1,12 @@
 import React, { useEffect } from "react";
+
+import Cards from "../../objects/Cards";
+
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeVariants, TitleVariants } from "../../Variables";
 
 import "./styles.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faDiscord,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   const controls = useAnimation();
@@ -44,37 +40,7 @@ const About = () => {
             trabalho com HTML, CSS e Javascript para desenvolver interfaces
             amigáveis e intuitivas para os usuários.
           </p>
-          <div className="cards-wrapper">
-            <ul className="cards-list">
-              <li className="card-item">
-                <a
-                  className="card-link"
-                  href="https://www.instagram.com/dgmaikon/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-              <li className="card-item">
-                <a
-                  className="card-link"
-                  href="https://discordapp.com/channels/@me/195164414176002058"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faDiscord} />
-                </a>
-              </li>
-              <li className="card-item">
-                <a
-                  className="card-link"
-                  href="https://www.linkedin.com/in/dgmaikondev/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <Cards />
         </div>
       </div>
     </motion.article>
