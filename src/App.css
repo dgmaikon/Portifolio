@@ -59,7 +59,7 @@
   left: 0;
   right: 0;
   opacity: 0;
-  box-shadow: 0 0 2em 0.2em var(--color-glow); /* efeito de luz no hover */
+  box-shadow: 0 0 2em 0.2em var(--color-glow);
   background-color: var(--color-glow);
   transition: opacity 100ms linear;
   z-index: -1;
