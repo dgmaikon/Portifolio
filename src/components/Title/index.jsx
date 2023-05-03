@@ -12,7 +12,9 @@ const Title = () => {
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      setTimeout(() => {
+        controls.start("visible");
+      }, 2200);
     }
   }, [controls, inView]);
 
@@ -30,12 +32,12 @@ const Title = () => {
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={["eu sou", "Gamer", "e sou", "Front-End Developer"]}
-            loop={1}
+            loop={2}
             cursor
             cursorStyle="_"
-            typeSpeed={50}
+            typeSpeed={40}
             deleteSpeed={60}
-            delaySpeed={1000}
+            delaySpeed={2000}
           />
         </span>
       </h1>
