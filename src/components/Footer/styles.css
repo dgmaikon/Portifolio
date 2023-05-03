@@ -21,6 +21,7 @@
 
 .copyright {
   padding: 1rem;
+  color: var(--color-light);
 }
 
 .copyright span {
@@ -28,7 +29,7 @@
 }
 
 .footer-text {
-  color: var(--color-zero);
+  color: var(--color-light);
   text-decoration: none;
 }
 
