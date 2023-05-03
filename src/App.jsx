@@ -10,6 +10,7 @@ import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 import NavigationFooter from "./components/NavigationFooter";
+import Content from "./components/LoaderContent";
 
 //CSS
 import "./App.css";
@@ -17,6 +18,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
+      <Content />
       <Header />
       <Title />
       <About />
