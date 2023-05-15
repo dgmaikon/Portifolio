@@ -1,5 +1,10 @@
+.invisible {
+  display: none;
+}
+
 .nav-items {
   display: flex;
+  justify-content: space-between;
   margin-left: auto;
   list-style: none;
   transition: all 0.4s;
@@ -16,13 +21,13 @@
   transition: all 0.2s ease-out;
 }
 
+.nav-items:hover .nav-item:not(:hover) {
+  opacity: 0.2;
+  transition: all 0.4s ease-out;
+}
+
 .nav-item a:hover {
   color: var(--color-glow);
   text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 100px #03e9f4;
-}
-
-.nav-items:hover .nav-item:not(:hover) {
-  opacity: 0.2;
-  transition: all 0.4s ease-out;
 }
