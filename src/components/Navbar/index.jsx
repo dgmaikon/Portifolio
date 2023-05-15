@@ -46,7 +46,7 @@ const Navbar = () => {
 
       <HamburgerMenu handleClick={handleClick} />
       {isOpen && (
-        <nav>
+        <nav className="nav-hamburger">
           <ul className="nav-items">
             <li className="nav-item">
               <a href="#main">Home</a>
