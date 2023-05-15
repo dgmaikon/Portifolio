@@ -65,7 +65,7 @@
     padding: 7rem 0;
   }
   .myBtn {
-    display: none;
+    transform: translateY(-3rem);
   }
 }
 
@@ -130,9 +130,9 @@
 
 /* Laptop */
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  /* #header .nav-items li {
-    display: flex;
-  } */
+  .nav-hamburger {
+    display: none;
+  }
 
   #about .about-wrapper {
     flex-direction: column;
