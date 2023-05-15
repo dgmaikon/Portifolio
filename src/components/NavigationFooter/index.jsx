@@ -39,9 +39,7 @@ const NavigationFooter = () => {
           </a>
         </li>
         <li className="nav-items-footer">
-          <a className="nav-link">
             <Logo />
-          </a>
         </li>
         <li className="nav-items-footer">
           <a className="nav-link" href="#skills">
