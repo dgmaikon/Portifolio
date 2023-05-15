@@ -14,7 +14,7 @@ const Title = () => {
     if (inView) {
       setTimeout(() => {
         controls.start("visible");
-      }, 2200);
+      }, 500);
     }
   }, [controls, inView]);
 
