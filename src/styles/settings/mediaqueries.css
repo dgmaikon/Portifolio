@@ -8,7 +8,7 @@
     display: none;
   }
   .nav-items li a {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   #main {
@@ -36,21 +36,23 @@
     margin: 2rem 1.5rem;
     font-size: var(--size-small);
   }
-  #about .cards-list {
-    margin-top: 2rem;
-  }
 
   #skills {
     height: 60vh;
+    padding: 0;
+    flex-direction: column;
+  }
+  #skills .skills-title {
+    justify-content: center;
+  }
+  #skills .skills-description {
+    height: min(100%, 60rem);
   }
 
-  #skills .cards-list {
-    gap: 1.5rem;
+  #skills .description {
+    gap: 1rem;
   }
 
-  #skills .cards-wrapper {
-    margin-top: 8rem;
-  }
   .products {
     padding: 1rem;
   }
@@ -59,7 +61,7 @@
     margin: 2rem 0;
   }
   .project-items {
-    min-height: 200px;
+    min-height: 14rem;
   }
   #footer {
     padding: 7rem 0;
@@ -92,13 +94,13 @@
     display: block;
   }
 
-  #main .main-title {
-    font-size: var(--size-big);
-  }
-
   .glowing-btn {
     font-size: var(--size-big);
     margin: 10%;
+  }
+
+  #main .main-title {
+    font-size: var(--size-big);
   }
 
   #about .about-wrapper {
@@ -113,14 +115,17 @@
     font-size: var(--size-small);
   }
 
-  #skills .cards-list {
-    gap: 1.5rem;
+  #skills {
+    padding: 0;
+    flex-direction: column;
   }
-  #skills .cards-wrapper {
-    margin-top: 8rem;
+  #skills .skills-description {
+    width: 100%;
+    height: min(100%, 40rem);
   }
+
   .products {
-    padding: 1rem;
+    padding: 1.5rem 2.5rem;
   }
   #project-section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -139,18 +144,25 @@
     padding-top: 2rem;
     margin-top: 2rem;
   }
-
   #about .about-text {
     min-width: 60vw;
     text-align: flex-start;
   }
-  #skills .cards-list {
-    gap: 1.5rem;
+
+  #skills {
+    padding: 0;
+    flex-direction: column;
+  }
+  #skills .skills-description {
+    width: 100%;
   }
 
-  #skills .cards-wrapper {
-    margin-top: 3rem;
+  .description {
+    padding: 2rem 4rem;
+    gap: 2rem 2rem;
+    margin: auto;
   }
+
   #project-section {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     margin: 2rem 0;
