@@ -1,0 +1,36 @@
+/* .description {
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.description-item {
+  list-style: none;
+  background-color: var(--color-zero);
+  border: 2px solid #1d1d1d;
+  border-radius: 6px;
+  transition: 0.5s all ease;
+}
+
+.description-link {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--color-glow);
+  width: 4.5rem;
+  height: 4.5rem;
+  transition: 0.5s linear;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.description-item:hover {
+  border-color: var(--color-glow);
+} */
