@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import Cards from "../../objects/Cards";
+import Social from "../../objects/Social";
 
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -26,9 +26,15 @@ const About = () => {
       initial="hidden"
       variants={fadeVariants}
     >
-      <motion.button className="glowing-btn" variants={TitleVariants}>
+      <motion.button
+        className="glowing-btn"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={TitleVariants}
+      >
         <span className="glowing-txt">
-          A<span className="faulty-letter">B</span>OUT
+          <span className="faulty-letter">A</span>BOUT
         </span>
       </motion.button>
 
@@ -40,7 +46,7 @@ const About = () => {
             trabalho com HTML, CSS e Javascript para desenvolver interfaces
             amigáveis e intuitivas para os usuários.
           </p>
-          <Cards />
+          <Social />
         </div>
       </div>
     </motion.article>
