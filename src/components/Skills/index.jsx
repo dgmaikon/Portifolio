@@ -1,32 +1,52 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { fadeVariants, TitleVariants } from "../../Variables";
+import { fadeVariants } from "../../Variables";
+
+import changeDescription from "../../data/changeDescription.json";
 
 import "./styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faReact,
-  faNodeJs,
-  faGitAlt,
-  faGithub,
-  faSass,
-  faBootstrap,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const [hoveredItem, setHoveredItem] = useState(false);
+  const [text, setText] = useState("Passe o mouse em algum icone.");
 
   useEffect(() => {
     if (inView) {
       controls.start("visible");
     }
   }, [controls, inView]);
+
+  const handleMouseEnter = (itemId, itemDescription) => {
+    setHoveredItem(itemId);
+    setText(itemDescription);
+    console.log(itemDescription);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem(false);
+    setText("Passe o mouse em algum icone.");
+  };
+
+  const skillsData = changeDescription.map((item) => {
+    return (
+      <ul className="description-list" key={item.id}>
+        <li
+          className="description-item"
+          onMouseEnter={() => handleMouseEnter(item.id, item.description)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <i className="description-link">
+            <FontAwesomeIcon icon={item.icon} />
+          </i>
+        </li>
+      </ul>
+    );
+  });
 
   return (
     <motion.article
@@ -36,67 +56,11 @@ const Skills = () => {
       initial="hidden"
       variants={fadeVariants}
     >
-      <motion.button
-        className="glowing-btn"
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={TitleVariants}
-      >
-        <span className="glowing-txt">
-          S<span className="faulty-letter">K</span>ILLS
-        </span>
-      </motion.button>
-
-      <div className="cards-wrapper">
-        <ul className="cards-list">
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faHtml5} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faCss3Alt} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faJs} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faReact} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faNodeJs} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faGitAlt} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faGithub} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faSass} />
-            </i>
-          </li>
-          <li className="card-item">
-            <i className="card-link">
-              <FontAwesomeIcon icon={faBootstrap} />
-            </i>
-          </li>
-        </ul>
+      <div className="skills-description">
+        <h2 className="skills-title">Skills</h2>
+        <h2 className="change-description">{text}</h2>
       </div>
+      <aside className="description">{skillsData}</aside>;
     </motion.article>
   );
 };
