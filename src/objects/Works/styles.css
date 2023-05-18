@@ -6,7 +6,7 @@
 
 .project-items {
   position: relative;
-  min-height: 250px;
+  min-height: 15rem;
   padding: 5%;
   background-color: var(--color-primary);
   border-top: 1px solid var(--color-glow);
