@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { TitleVariants } from "../../Variables";
@@ -22,7 +22,7 @@ const TitleWorks = () => {
       variants={TitleVariants}
     >
       <span className="glowing-txt">
-        W<span className="faulty-letter">O</span>RKS
+        WORK<span className="faulty-letter">S</span>
       </span>
     </motion.button>
   );
