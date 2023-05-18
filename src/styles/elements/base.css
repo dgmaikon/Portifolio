@@ -17,3 +17,15 @@ body {
 *::after {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-glow);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
