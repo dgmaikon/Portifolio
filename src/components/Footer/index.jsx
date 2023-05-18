@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { fadeVariants } from "../../Variables";
+import { FooterVariants } from "../../Variables";
 
 import "./styles.css";
 
@@ -22,7 +22,7 @@ function Footer() {
       ref={ref}
       animate={controls}
       initial="hidden"
-      variants={fadeVariants}
+      variants={FooterVariants}
     >
       <p className="copyright">
         Copyright © <span>{year}</span>
