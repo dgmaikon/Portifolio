@@ -7,3 +7,8 @@ export const TitleVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   hidden: { opacity: 0, y: 100 },
 };
+
+export const FooterVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+  hidden: { opacity: 0, y: 150 },
+};
