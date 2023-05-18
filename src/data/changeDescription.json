@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "description": "A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online.",
+    "icon": "fa-brands fa-html5"
+  },
+  {
+    "id": 2,
+    "description": "CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML",
+    "icon": "fa-brands fa-css3"
+  },
+  {
+    "id": 3,
+    "description": "JavaScript é uma linguagem de programação que adiciona interatividade ao seu site. Isso acontece em jogos, no comportamento das respostas quando botões são pressionados ou com entrada de dados em formulários",
+    "icon": "fa-brands fa-js"
+  },
+  {
+    "id": 4,
+    "description": "O React permite que você crie interfaces de usuário a partir de peças individuais chamadas de componentes. Crie seus próprios componentes React como Thumbnail, LikeButton, e Video. Em seguida, combine-os em telas inteiras, páginas, e aplicativos.",
+    "icon": "fa-brands fa-react"
+  },
+  {
+    "id": 5,
+    "description": "O Node é capaz de interpretar um código JavaScript, igual ao que o navegador faz. Sendo assim, quando o navegador recebe um comando em JavaScript, ele o interpreta e depois executa as instruções fornecidas.",
+    "icon": "fa-brands fa-node-js"
+  },
+  {
+    "id": 6,
+    "description": "Git é um sistema de controle de versão open-source, ou seja, gratuito. Ele é utilizado para a criação de um histórico de alterações em código-fonte de projetos de desenvolvimento de software.",
+    "icon": "fa-brands fa-git"
+  },
+  {
+    "id": 7,
+    "description": "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. É como uma plataforma social colaborativa, onde programadores e empresas colocam seus projetos para o desenvolvimento do código.",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "id": 8,
+    "description": "O SASS é uma linguagem de extensão do CSS, a sigla significa “Syntactically Awesome Style Sheets” traduzindo ao pé da letra, folhas de estilo com uma sintaxe incrível.",
+    "icon": "fa-brands fa-sass"
+  },
+  {
+    "id": 9,
+    "description": "Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.",
+    "icon": "fa-brands fa-bootstrap"
+  }
+]
