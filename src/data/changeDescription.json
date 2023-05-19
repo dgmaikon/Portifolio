@@ -16,7 +16,7 @@
   },
   {
     "id": 4,
-    "description": "O React permite que você crie interfaces de usuário a partir de peças individuais chamadas de componentes. Crie seus próprios componentes React como Thumbnail, LikeButton, e Video. Em seguida, combine-os em telas inteiras, páginas, e aplicativos.",
+    "description": "O React permite que você crie interfaces de usuário a partir de peças individuais chamadas de componentes. Crie seus próprios componentes React como Thumbnail, LikeButton, e Video.",
     "icon": "fa-brands fa-react"
   },
   {
