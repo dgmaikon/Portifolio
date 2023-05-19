@@ -1,28 +1,27 @@
 #skills {
-  height: 60vh;
-  padding: 5rem 10rem;
+  position: relative;
+  height: auto;
+  margin: 0 1.5rem 5rem 1.5rem;
+}
+
+.skills-wrapper {
   display: flex;
+  justify-content: space-evenly;
+  margin: 5rem 0;
+}
+
+.change-description {
+  min-height: 10vh;
+  margin: 5rem 0;
+  display: flex;
+  width: 35vw;
   justify-content: center;
-  background-color: var(--color-primary);
-}
-
-.skills-description {
-  display: flex;
-  flex-direction: column;
-  width: min(100%, 30rem);
+  background-color: transparent;
   color: white;
-  font-size: 15px;
-}
-
-.skills-title {
-  color: white;
-  font-size: var(--size-big);
-  padding: 1rem 0;
+  font-size: var(--size-medium);
 }
 
 .description {
-  padding: 1rem 2rem;
-  background-color: var(--color-primary);
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -32,7 +31,7 @@
 
 .description-item {
   list-style: none;
-  background-color: var(--color-zero);
+  background-color: transparent;
   border: 2px solid #1d1d1d;
   border-radius: 6px;
   transition: 0.5s all ease;
