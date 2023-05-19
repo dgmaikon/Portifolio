@@ -17,10 +17,6 @@
   #main .main-title {
     font-size: var(--size-big);
   }
-  .glowing-btn {
-    font-size: var(--size-big);
-    margin: 10%;
-  }
 
   #about {
     padding: 0 1.5rem 5rem 1.5rem;
@@ -37,24 +33,21 @@
     font-size: var(--size-small);
   }
 
-  #skills {
-    height: 60vh;
-    padding: 0;
+  #skills .skills-wrapper {
     flex-direction: column;
   }
-  #skills .skills-title {
-    justify-content: center;
-  }
-  #skills .skills-description {
-    height: min(100%, 60rem);
+  #skills .change-description {
+    width: 100%;
+    min-height: 25vh;
   }
 
   #skills .description {
+    padding: 0;
     gap: 1rem;
   }
 
   .products {
-    padding: 1rem;
+    padding: 2rem 1.5rem;
   }
   #project-section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,11 +87,6 @@
     display: block;
   }
 
-  .glowing-btn {
-    font-size: var(--size-big);
-    margin: 10%;
-  }
-
   #main .main-title {
     font-size: var(--size-big);
   }
@@ -115,13 +103,17 @@
     font-size: var(--size-small);
   }
 
-  #skills {
-    padding: 0;
+  #skills .change-description {
+    width: 100%;
+    min-height: 20vh;
+  }
+
+  #skills .skills-wrapper {
     flex-direction: column;
   }
-  #skills .skills-description {
-    width: 100%;
-    height: min(100%, 40rem);
+  #skills .description {
+    padding: 0;
+    gap: 2rem;
   }
 
   .products {
@@ -149,18 +141,12 @@
     text-align: flex-start;
   }
 
-  #skills {
-    padding: 0;
+  #skills .skills-wrapper {
     flex-direction: column;
   }
-  #skills .skills-description {
+  #skills .change-description {
+    min-height: 20vh;
     width: 100%;
-  }
-
-  .description {
-    padding: 2rem 4rem;
-    gap: 2rem 2rem;
-    margin: auto;
   }
 
   #project-section {
