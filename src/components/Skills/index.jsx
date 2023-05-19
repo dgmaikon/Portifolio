@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { fadeVariants } from "../../Variables";
+import { fadeVariants, TitleVariants } from "../../Variables";
 
 import changeDescription from "../../data/changeDescription.json";
 
@@ -56,11 +56,22 @@ const Skills = () => {
       initial="hidden"
       variants={fadeVariants}
     >
-      <div className="skills-description">
-        <h2 className="skills-title">Skills</h2>
+      <motion.button
+        className="glowing-btn"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={TitleVariants}
+      >
+        <span className="glowing-txt">
+          SK
+          <span className="faulty-letter">I</span>LLS
+        </span>
+      </motion.button>
+      <div className="skills-wrapper">
         <h2 className="change-description">{text}</h2>
+        <aside className="description">{skillsData}</aside>
       </div>
-      <aside className="description">{skillsData}</aside>;
     </motion.article>
   );
 };
