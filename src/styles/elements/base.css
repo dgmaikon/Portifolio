@@ -10,6 +10,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-color: var(--color-glow) transparent; /* Firefox */
+  scrollbar-width: auto; /* Firefox */
 }
 
 *,
@@ -19,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.4rem;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-glow);
