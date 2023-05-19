@@ -2,8 +2,8 @@
   --color-zero: #000;
   --color-light: #fff;
   --color-primary: #09090b;
-  --color-glow: #61efff;
-  --color-glow-dark: #004e92;
+  --color-glow: rgb(97, 239, 255);
+  --color-glow-dark: rgb(0, 78, 146);
   --color-logo-left: rgb(142, 161, 241);
   --color-logo-right: rgb(169, 59, 252);
 }
